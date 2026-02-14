@@ -1,0 +1,15 @@
+User-agent: *
+
+# Allow Google to see your articles
+Allow: /article/
+Allow: /in-praise-for-wisdom/
+
+# Disallow Google from indexing your Delphi source code and other root files
+Disallow: /*.pas$
+Disallow: /*.dfm$
+Disallow: /*.dpr$
+Disallow: /*.dproj$
+Disallow: /          
+
+# Point Google to your Sitemap
+Sitemap: https://salarbasiri.github.io/article/sitemap.xml

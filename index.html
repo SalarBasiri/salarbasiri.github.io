@@ -1,11 +1,90 @@
 <!DOCTYPE html>
-<html lang="fa" dir="rtl">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>سالار بصیری</title>
-    <meta http-equiv="refresh" content="0; url=https://salarbasiri.github.io/article/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salar Basiri | SALAR-Bio-Lab & Research</title>
+    <meta name="description" content="Salar Basiri - Developer of SALAR (Smart and Low-cost Advanced Analysis and Research). Expert in Delphi-based cardiac electrophysiology and bio-signal processing.">
+    <style>
+        :root {
+            --primary: #2c3e50;
+            --accent: #3498db;
+            --text: #333;
+            --bg: #f4f7f6;
+        }
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; line-height: 1.6; color: var(--text); background: var(--bg); margin: 0; padding: 0; }
+        header { background: var(--primary); color: white; padding: 4rem 2rem; text-align: center; }
+        .container { max-width: 900px; margin: 0 auto; padding: 2rem; }
+        h1 { margin: 0; font-size: 2.5rem; letter-spacing: 1px; }
+        .tagline { font-style: italic; opacity: 0.9; margin-top: 10px; }
+        
+        .intro { background: white; padding: 2rem; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); margin-top: -3rem; }
+        
+        .catalog { margin-top: 3rem; }
+        .project-card { background: white; border-left: 5px solid var(--accent); padding: 1.5rem; margin-bottom: 1.5rem; border-radius: 0 8px 8px 0; box-shadow: 0 2px 4px rgba(0,0,0,0.05); transition: transform 0.2s; }
+        .project-card:hover { transform: translateX(10px); }
+        .project-card h3 { margin-top: 0; color: var(--primary); }
+        .project-card a { color: var(--accent); text-decoration: none; font-weight: bold; }
+        
+        .humanitarian { background: #fff5f5; border: 1px solid #feb2b2; padding: 2rem; border-radius: 8px; margin-top: 4rem; text-align: center; }
+        .humanitarian h2 { color: #c53030; }
+        .btn-article { display: inline-block; background: #c53030; color: white; padding: 0.8rem 1.5rem; border-radius: 5px; text-decoration: none; margin-top: 1rem; transition: background 0.2s; }
+        .btn-article:hover { background: #9b2c2c; }
+
+        footer { text-align: center; padding: 3rem; font-size: 0.9rem; color: #777; }
+    </style>
 </head>
 <body>
-    <p>در حال انتقال به بخش مقالات...</p>
+
+<header>
+    <h1>Salar Basiri</h1>
+    <p class="tagline">Smart and Low-cost Advanced Analysis and Research (SALAR)</p>
+</header>
+
+<div class="container">
+    <section class="intro">
+        <h2>About the Project</h2>
+        <p>
+            Based on 2-3 years of intensive R&D at the <strong>Golestan Ischemic Disorder Lab</strong>, 
+            the SALAR ecosystem provides a first-principles approach to cardiac electrophysiology. 
+            All software is developed in <strong>Delphi</strong>, focusing on <strong>Pure Time-Domain Processing</strong> 
+            to ensure zero signal-history dependency and high-performance real-time analysis.
+        </p>
+    </section>
+
+    <section class="catalog">
+        <h2>🛠️ Technical Catalog</h2>
+
+        <div class="project-card">
+            <h3>📦 SALAR-Bio-DAQ</h3>
+            <p>High-speed data acquisition and on-line signal processing. Includes real-time APD80 markers, FIR filtering, and complex pacing protocols for Langendorff setups.</p>
+            <a href="https://github.com/SalarBasiri/SALAR-Bio-DAQ">View Repository &rarr;</a>
+        </div>
+
+        <div class="project-card">
+            <h3>👁️ SALAR-Optical-Mapping</h3>
+            <p>Tempo-spatial image processing suite for cardiac wave visualization. Features super-pixel extraction and conduction velocity vector mapping.</p>
+            <a href="https://github.com/SalarBasiri/SALAR-Optical-Mapping">View Repository &rarr;</a>
+        </div>
+
+        <div class="project-card">
+            <h3>🔌 SDC-1721 Hardware</h3>
+            <p>Architecture of the Smart Dynamic Conditioner. High-precision hardware featuring dual-battery power management and ATMEGA-based pulse generation.</p>
+            <a href="https://github.com/SalarBasiri/SALAR-Bio-Lab">View Hardware Specs &rarr;</a>
+        </div>
+    </section>
+
+    <section class="humanitarian">
+        <h2>🌍 Beyond Engineering</h2>
+        <p>I believe that technical innovation must be paired with humanitarian awareness. Alongside my engineering work, I publish articles discussing human rights and social perspectives.</p>
+        <a href="/article/" class="btn-article">Read Humanitarian Articles</a>
+    </section>
+
+    <footer>
+        <p>Contact: salarbasiri.smart@gmail.com</p>
+        <p>&copy; 2026 Salar Basiri. Built with Delphi-inspired efficiency.</p>
+    </footer>
+</div>
+
 </body>
 </html>

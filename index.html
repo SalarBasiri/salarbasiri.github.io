@@ -3,86 +3,105 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Salar Basiri | SALAR-Bio-Lab & Research</title>
-    <meta name="description" content="Salar Basiri - Developer of SALAR (Smart and Low-cost Advanced Analysis and Research). Expert in Delphi-based cardiac electrophysiology and bio-signal processing.">
+    <title>Salar Basiri | SALAR-Bio-Lab Research & Engineering</title>
+    <meta name="description" content="Salar Basiri - Lead developer of SALAR (Smart and Low-cost Advanced Analysis and Research). Specialized in Time-Domain bio-signal processing, Delphi Engineering, and Cardiac Electrophysiology.">
     <style>
         :root {
-            --primary: #2c3e50;
-            --accent: #3498db;
-            --text: #333;
-            --bg: #f4f7f6;
+            --primary: #1a365d;
+            --accent: #3182ce;
+            --secondary: #2d3748;
+            --wsn: #38a169;
+            --text: #2d3748;
+            --bg: #f7fafc;
         }
-        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; line-height: 1.6; color: var(--text); background: var(--bg); margin: 0; padding: 0; }
-        header { background: var(--primary); color: white; padding: 4rem 2rem; text-align: center; }
-        .container { max-width: 900px; margin: 0 auto; padding: 2rem; }
-        h1 { margin: 0; font-size: 2.5rem; letter-spacing: 1px; }
-        .tagline { font-style: italic; opacity: 0.9; margin-top: 10px; }
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.6; color: var(--text); background: var(--bg); margin: 0; padding: 0; }
+        header { background: linear-gradient(135deg, var(--primary) 0%, #2a4365 100%); color: white; padding: 5rem 2rem; text-align: center; }
+        .container { max-width: 1000px; margin: 0 auto; padding: 2rem; }
+        h1 { margin: 0; font-size: 2.8rem; letter-spacing: 2px; }
+        .tagline { font-size: 1.2rem; opacity: 0.9; margin-top: 15px; font-weight: 300; }
         
-        .intro { background: white; padding: 2rem; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); margin-top: -3rem; }
+        .intro-box { background: white; padding: 2.5rem; border-radius: 12px; box-shadow: 0 10px 15px -3px rgba(0,0,0,0.1); margin-top: -4rem; border-bottom: 4px solid var(--accent); }
         
-        .catalog { margin-top: 3rem; }
-        .project-card { background: white; border-left: 5px solid var(--accent); padding: 1.5rem; margin-bottom: 1.5rem; border-radius: 0 8px 8px 0; box-shadow: 0 2px 4px rgba(0,0,0,0.05); transition: transform 0.2s; }
-        .project-card:hover { transform: translateX(10px); }
-        .project-card h3 { margin-top: 0; color: var(--primary); }
-        .project-card a { color: var(--accent); text-decoration: none; font-weight: bold; }
+        .section-title { border-bottom: 2px solid #e2e8f0; padding-bottom: 0.5rem; margin-top: 4rem; color: var(--primary); display: flex; align-items: center; gap: 10px; }
         
-        .humanitarian { background: #fff5f5; border: 1px solid #feb2b2; padding: 2rem; border-radius: 8px; margin-top: 4rem; text-align: center; }
-        .humanitarian h2 { color: #c53030; }
-        .btn-article { display: inline-block; background: #c53030; color: white; padding: 0.8rem 1.5rem; border-radius: 5px; text-decoration: none; margin-top: 1rem; transition: background 0.2s; }
-        .btn-article:hover { background: #9b2c2c; }
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; margin-top: 1.5rem; }
+        .card { background: white; padding: 1.8rem; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); transition: all 0.3s ease; border: 1px solid #edf2f7; }
+        .card:hover { transform: translateY(-5px); box-shadow: 0 12px 20px rgba(0,0,0,0.1); border-color: var(--accent); }
+        .card h3 { margin-top: 0; color: var(--primary); font-size: 1.4rem; }
+        .card p { font-size: 0.95rem; color: #4a5568; }
+        .card a { color: var(--accent); text-decoration: none; font-weight: 600; font-size: 0.9rem; }
 
-        footer { text-align: center; padding: 3rem; font-size: 0.9rem; color: #777; }
+        .wsn-card { border-top: 4px solid var(--wsn); }
+        
+        .humanitarian-banner { background: #fff5f5; border: 2px dashed #fc8181; padding: 2.5rem; border-radius: 12px; margin-top: 5rem; text-align: center; }
+        .humanitarian-banner h2 { color: #c53030; margin-top: 0; }
+        .btn-red { display: inline-block; background: #e53e3e; color: white; padding: 1rem 2rem; border-radius: 6px; text-decoration: none; font-weight: bold; margin-top: 1rem; transition: background 0.2s; }
+        .btn-red:hover { background: #c53030; }
+
+        footer { text-align: center; padding: 4rem 2rem; color: #718096; font-size: 0.85rem; }
     </style>
 </head>
 <body>
 
 <header>
     <h1>Salar Basiri</h1>
-    <p class="tagline">Smart and Low-cost Advanced Analysis and Research (SALAR)</p>
+    <p class="tagline"><strong>S</strong>mart and <strong>L</strong>ow-cost <strong>A</strong>dvanced <strong>A</strong>nalysis and <strong>R</strong>esearch (SALAR)</p>
 </header>
 
 <div class="container">
-    <section class="intro">
-        <h2>About the Project</h2>
+    <section class="intro-box">
+        <h2>Expertise & Lab Background</h2>
         <p>
-            Based on 2-3 years of intensive R&D at the <strong>Golestan Ischemic Disorder Lab</strong>, 
-            the SALAR ecosystem provides a first-principles approach to cardiac electrophysiology. 
-            All software is developed in <strong>Delphi</strong>, focusing on <strong>Pure Time-Domain Processing</strong> 
-            to ensure zero signal-history dependency and high-performance real-time analysis.
+            Based on over two years of intensive R&D at the <strong>Golestan Ischemic Disorder Lab</strong>, I specialize in high-performance bio-medical engineering. 
+            My work focuses on <strong>Pure Time-Domain Processing</strong> developed in Delphi 7 and Delphi 2010[cite: 2]. By avoiding frequency-domain dependencies (FFT), 
+            my systems achieve true real-time, zero-latency analysis for critical cardiac research[cite: 21, 33].
         </p>
     </section>
 
-    <section class="catalog">
-        <h2>🛠️ Technical Catalog</h2>
-
-        <div class="project-card">
-            <h3>📦 SALAR-Bio-DAQ</h3>
-            <p>High-speed data acquisition and on-line signal processing. Includes real-time APD80 markers, FIR filtering, and complex pacing protocols for Langendorff setups.</p>
-            <a href="https://github.com/SalarBasiri/SALAR-Bio-DAQ">View Repository &rarr;</a>
+    <h2 class="section-title">🛡️ Core Research Pillars (Delphi Ecosystem)</h2>
+    <div class="grid">
+	    <div class="card">
+            <h3>SALAR-Bio-Lab</h3>
+            <p>The SALAR-Bio-Lab (Smart and Low-cost Advanced Analysis and Research) is the product of over two years of intensive R&D at the Golestan Ischemic Disorder Lab. It represents an end-to-end open-access framework for extracting complex heart characteristics, ranging from real-time electrical time-domain markers to spatial conduction velocity vectors..</p>
+            <a href="https://github.com/SalarBasiri/SALAR-Bio-Lab">View Architecture &rarr;</a>
+        </div>
+		
+        <div class="card">
+            <h3>SALAR-Bio-DAQ</h3>
+            <p>Integrated Online/Offline system for real-time cardiac capture detection, APD80 markers, and custom pacing protocols.</p>
+            <a href="https://github.com/SalarBasiri/SALAR-Bio-DAQ-Core">Explore Code &rarr;</a>
+        </div>
+        <div class="card">
+            <h3>Optical Mapping</h3>
+            <p>Tempo-Spatial image processing suite. Extracts conduction velocity vectors and calcium/voltage dynamics from high-speed fluorescence data.</p>
+            <a href="https://github.com/SalarBasiri/SALAR-Optical-Mapping-Core">Explore Code &rarr;</a>
         </div>
 
-        <div class="project-card">
-            <h3>👁️ SALAR-Optical-Mapping</h3>
-            <p>Tempo-spatial image processing suite for cardiac wave visualization. Features super-pixel extraction and conduction velocity vector mapping.</p>
-            <a href="https://github.com/SalarBasiri/SALAR-Optical-Mapping">View Repository &rarr;</a>
-        </div>
+    </div>
 
-        <div class="project-card">
-            <h3>🔌 SDC-1721 Hardware</h3>
-            <p>Architecture of the Smart Dynamic Conditioner. High-precision hardware featuring dual-battery power management and ATMEGA-based pulse generation.</p>
-            <a href="https://github.com/SalarBasiri/SALAR-Bio-Lab">View Hardware Specs &rarr;</a>
+    <h2 class="section-title">📡 Incoming Projects & WSN Research</h2>
+    <div class="grid">
+        <div class="card wsn-card">
+            <h3>Wireless Sensor Networks (WSN)</h3>
+            <p>Upcoming repository focusing on low-power sensor node synchronization, data aggregation algorithms, and robust mesh networking protocols for environmental and medical monitoring.</p>
+            <span><em>Repository Launching Soon</em></span>
         </div>
-    </section>
+        <div class="card wsn-card">
+            <h3>Google Meet for Elderlies</h3>
+            <p>An Automated system for elderlies to make calls with their beloved ones.</p>
+            <span><em>Repository Launching Soon</em></span>
+        </div>
+    </div>
 
-    <section class="humanitarian">
-        <h2>🌍 Beyond Engineering</h2>
-        <p>I believe that technical innovation must be paired with humanitarian awareness. Alongside my engineering work, I publish articles discussing human rights and social perspectives.</p>
-        <a href="/article/" class="btn-article">Read Humanitarian Articles</a>
+    <section class="humanitarian-banner">
+        <h2>🌍 Humanitarian Perspectives</h2>
+        <p>Technical engineering finds its true value when balanced with social responsibility. I maintain a dedicated repository for my articles on human rights and social humanitarianism.</p>
+        <a href="https://salarbasiri.github.io/article/" class="btn-red">Read Humanitarian Articles</a>
     </section>
 
     <footer>
-        <p>Contact: salarbasiri.smart@gmail.com</p>
-        <p>&copy; 2026 Salar Basiri. Built with Delphi-inspired efficiency.</p>
+        <p>Technical Contact: salarbasiri.smart@gmail.com</p>
+        <p>&copy; 2026 Salar Basiri | Smart and Low-cost Advanced Analysis and Research</p>
     </footer>
 </div>
 
